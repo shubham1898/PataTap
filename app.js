@@ -2,17 +2,18 @@ var express=require("express");
 var app=express();
 
 app.use(express.static("public"));
-app.get("/", function(req,res){
+app.set('port',(process.env.PORT || 3000));
+app.get("/status", (req,res)=>{
 	res.send("<h1>CONNECTED<h1>");
 	
 })
 
-app.get("/project", function(req,res){
+app.get("/",(req,res)=>{
 	res.render("patatprandomanimate.ejs");
 	
 })
 
-app.listen(3000, function(req,res){
+app.listen(app.get('port'),()=>{
 	console.log("Server Online");
 	
 })
