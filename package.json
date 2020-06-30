@@ -4,13 +4,20 @@
   "description": "This is patatp projects with basic bakend included",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start":"node app.js"
+  },
+  "engines": {
+    "node": "12.16.x"
   },
   "keywords": [
     "full",
     "stack",
     "website"
   ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/shubham1898/PataTap.git"
+  },
   "author": "Kumar shubham",
   "license": "ISC",
   "dependencies": {
