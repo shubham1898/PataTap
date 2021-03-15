@@ -184,8 +184,8 @@ var keyData = {
     }
 }
 var newcircle=[];
-// function onKeyDown(event)
-function onMouseDown(event)
+ function onKeyDown(event)
+//function onMouseDown(event)
 {
     // for(var j=0;j<100;j++){
     var w=view.size.width;
